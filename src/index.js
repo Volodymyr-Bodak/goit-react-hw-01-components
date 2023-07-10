@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
-import user from './src/user.json'
+import user from 'user.json'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
