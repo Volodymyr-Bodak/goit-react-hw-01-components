@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styles from './Transactions.module.css'
 const Transactions = ({ items }) => (

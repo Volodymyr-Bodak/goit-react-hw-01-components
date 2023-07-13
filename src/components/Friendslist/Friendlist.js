@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styles from './Friendlist.css'
 
 const Friendlist = ({ friends }) => {
     return (
-      <ul className="friend-list">
+      <ul className={styles.friendlist}>
         {friends.map(friend => (
-          <li className="item" key={friend.id}>
+          <li className={styles.item} key={friend.id}>
             <span
               className="status"
               style={{ backgroundColor: friend.isOnline ? 'green' : 'red' }}
