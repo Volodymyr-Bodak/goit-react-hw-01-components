@@ -35,3 +35,14 @@
     margin-left: 10px;
     font-size: 14px;
   }
+  .true {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .false {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+  }

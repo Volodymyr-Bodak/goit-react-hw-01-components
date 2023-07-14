@@ -15,12 +15,13 @@ const getRandomColor = () => {
 const Statistics = ({ stats, title }) => {
   return (
     <section className="statistics">
-      <h2 className={styles.title}>{title}</h2>
+     {title && <h2 className={styles.title}>{title}</h2>} 
+      
 
       <ul className={styles.statlist}>
         {stats.map(stat => (
           <li
-            className="item"
+            className={styles.item}
             key={stat.id}
             style={{ backgroundColor: getRandomColor() }}
           >
@@ -35,7 +36,7 @@ const Statistics = ({ stats, title }) => {
 
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
